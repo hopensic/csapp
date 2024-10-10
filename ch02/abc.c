@@ -8,6 +8,6 @@ int main(void) {
     printf("%x\n", a);
     printf("%x\n", b);
     printf("%x\n", c);
-    printf("sssssss");
+    printf("ssss");
     return 0;
 }
