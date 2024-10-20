@@ -1,13 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    // int a = 0x10;
-    // a = a<<1;
-
-    int a = 0xa;
-    int b = ~a;
-
-    printf("a is:%x\n", a);
-    printf("b is:%x\n", b);
-    return 0;
+    short int v = -12345;
+    unsigned short uv = (unsigned short) v;
+    printf("v=%d, uv=%u\n", v, uv);
 }
