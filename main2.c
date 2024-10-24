@@ -24,8 +24,8 @@ int main(void) {
     // printf("x=%u = %d\n",x,x);
     // printf("u=%u = %d\n",u,u);
 
-    printf("%u\n", (unsigned) -2147483647);
-    printf("%u\n", -2147483648);
+    // printf("%u\n", (unsigned) -2147483647);
+    // printf("%u\n", -2147483648);
 
 
     //csapp2 p48
@@ -42,4 +42,19 @@ int main(void) {
     // else if (2147483647u == -2147483647 - 1) {printf("2");}
     // else if (2147483647u ==-2147483647 - 2) { printf("3");}
     // else {printf("4");}
+
+    //csapp2 p49
+    short sx = -12345;
+    unsigned short usx = sx;
+    int x = sx;
+    unsigned ux = usx;
+
+    printf("sx = %d:\t", sx);
+    show_bytes((byte_pointer) &sx, sizeof(short));
+    printf("usx = %d:\t", usx);
+    show_bytes((byte_pointer) &usx, sizeof(unsigned short));
+    printf("x = %d:\t", x);
+    show_bytes((byte_pointer) &x, sizeof(int));
+    printf("ux = %d:\t", ux);
+    show_bytes((byte_pointer) &ux, sizeof(unsigned));
 }
