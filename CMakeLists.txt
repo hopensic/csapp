@@ -11,6 +11,7 @@ add_executable(main2 D:/github/csapp/main2.c
 add_executable(e02-11 D:/github/csapp/ch02/e02-11.c)
 add_executable(e02-12 D:/github/csapp/ch02/e02-12.c)
 add_executable(e02-13 D:/github/csapp/ch02/e02-13.c)
+add_executable(e02-23 D:/github/csapp/ch02/e02-23.c)
 
 add_subdirectory(Google_tests)
 #include_directories(${PROJECT_SOURCE_DIR}/src/include ./googletest/include)
