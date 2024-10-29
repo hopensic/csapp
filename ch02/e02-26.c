@@ -13,7 +13,7 @@ int strlonger(char *s, char *t) {
 
 int main(void) {
     char *a = "hello world";
-    char *b = "hello worl";
+    char *b = "hello world";
     int res = strlonger(b, a);
     printf("%d\n", res);
 }

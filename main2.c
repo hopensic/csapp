@@ -65,12 +65,19 @@ int main(void) {
     // show_bytes((byte_pointer) &uy, sizeof(unsigned short));
 
     //csapp2 p51
-    int x = 32768;
-    // int x = 53191;
-    short sx =(short)x;
-    int y = sx;
+    // int x = 32768;
+    // // int x = 53191;
+    // short sx =(short)x;
+    // int y = sx;
+    //
+    // printf("%d\n",sx);
 
-    printf("%d\n",sx);
+    //csapp2 p53
+
+
+
+
+
 
 
 

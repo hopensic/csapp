@@ -5,15 +5,16 @@ set(CMAKE_C_STANDARD 11)
 
 
 add_executable(show-bytes show-bytes.c)
+add_executable(practice practice.c)
 
-add_executable(main2 D:/github/csapp/main2.c
-        common/fun_bytes.c)
-add_executable(e02-11 D:/github/csapp/ch02/e02-11.c)
-add_executable(e02-12 D:/github/csapp/ch02/e02-12.c)
-add_executable(e02-13 D:/github/csapp/ch02/e02-13.c)
-add_executable(e02-23 D:/github/csapp/ch02/e02-23.c)
-add_executable(e02-25 D:/github/csapp/ch02/e02-25.c)
-add_executable(e02-26 D:/github/csapp/ch02/e02-26.c)
+add_executable(main2 main2.c common/fun_bytes.c)
+add_executable(e02-11 ch02/e02-11.c)
+add_executable(e02-12 ch02/e02-12.c)
+add_executable(e02-13 ch02/e02-13.c)
+add_executable(e02-23 ch02/e02-23.c)
+add_executable(e02-25 ch02/e02-25.c)
+add_executable(e02-26 ch02/e02-26.c)
+add_executable(csapp2_ch02_p053 ch02/csapp2_ch02_p053.c)
 
 add_subdirectory(Google_tests)
 #include_directories(${PROJECT_SOURCE_DIR}/src/include ./googletest/include)
