@@ -14,6 +14,7 @@ add_executable(e02-13 ch02/e02-13.c)
 add_executable(e02-23 ch02/e02-23.c)
 add_executable(e02-25 ch02/e02-25.c)
 add_executable(e02-26 ch02/e02-26.c)
+add_executable(e02-27 ch02/e02-27.c)
 add_executable(csapp2_ch02_p053 ch02/csapp2_ch02_p053.c)
 
 add_subdirectory(Google_tests)
