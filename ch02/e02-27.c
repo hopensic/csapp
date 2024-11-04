@@ -11,7 +11,7 @@ int uadd_ok(unsigned x, unsigned y) {
 }
 
 
-int main(void) {
+int e02_27(void) {
     unsigned a = 4294967295;
     unsigned b = 1;
     printf("%u\n", a);
