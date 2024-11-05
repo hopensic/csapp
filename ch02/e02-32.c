@@ -15,15 +15,19 @@ int tadd_ok(int x, int y) {
     return 0;
 }
 
+
+
+
+int tsub_ok(int x, int y) {
+   return tadd_ok(x,-y);
+}
+
 int main(void) {
-    int a = -2147483648;
+    // int a = -2147483648;
+    // int b = -2147483648 / 2;
+    int a = -1;
     int b = -2147483648;
-    // int b = 1;
-    int sum = a + b;
-    int c = tadd_ok(a, b);
-    // printf("%d\n", a);
-    // printf("%d\n", b);
-    // printf("%d\n", c);
-    printf("---------------\n");
-    printf("sum is %d\n", sum);
+    printf("a=:%d  b=%d\n", a, b);
+    int c = tsub_ok(a, b);
+    printf("c=%d\n", c);
 }

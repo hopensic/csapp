@@ -4,11 +4,11 @@
 #include "heads/bytes.h"
 
 int main(void) {
-    unsigned a = 4294967295;
-    unsigned b = 1;
+    int a = -2147483648;
+    int b = -a;
     unsigned c = a + b;
 
-    printf("%u\n", a);
-    printf("%u\n", b);
-    printf("%u\n", c);
+    printf("%d\n", a);
+    printf("%d\n", b);
+    printf("%d\n", c);
 }
