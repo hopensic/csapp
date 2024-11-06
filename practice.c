@@ -1,14 +1,30 @@
+/*
+* tsub-ok.c
+ */
 #include <stdio.h>
+#include <assert.h>
 #include <limits.h>
 
-#include "heads/bytes.h"
+/* Determine whether arguments can be substracted without overflow */
+int tsub_ok(int x, int y)
+{
+    int res = 1;
 
-int main(void) {
-    int a = -2147483648;
-    int b = -a;
-    unsigned c = a + b;
+    (y == INT_MIN) && (res = 0);
+    // if (y == INT_MIN) res = 0;
 
-    printf("%d\n", a);
-    printf("%d\n", b);
-    printf("%d\n", c);
+    int sub = x - y;
+    int pos_over = x > 0 && y < 0 && sub < 0;
+    int neg_over = x < 0 && y > 0 && sub > 0;
+
+    res = res && !(pos_over || neg_over);
+
+    return res;
+}
+
+int main(int argc, char* argv[]) {
+    // assert(tsub_ok(2, 3));
+    assert(!tsub_ok(0x00, INT_MIN));
+    assert(tsub_ok(0x00, 0x00));
+    return 0;
 }
