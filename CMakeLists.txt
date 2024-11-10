@@ -18,6 +18,8 @@ add_executable(e02-27 ch02/e02-27.c)
 add_executable(e02-30 ch02/e02-30.c)
 add_executable(e02-31 ch02/e02-31.c)
 add_executable(e02-32 ch02/e02-32.c)
+add_executable(e02-35 ch02/e02-35.c)
+add_executable(e02-36 ch02/e02-36.c)
 add_executable(e02-74 ch02/e02-74.c)
 add_executable(csapp2_ch02_p053 ch02/csapp2_ch02_p053.c)
 
